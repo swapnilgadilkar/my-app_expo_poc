@@ -6,12 +6,27 @@
       "@/*": [
         "./*"
       ]
-    }
+    },
+    "incremental": true,
+    // "module": "esnext",
+    "isolatedModules": true,
+    // "jsx": "preserve",
+    "jsx": "preserve",
+    "target": "es5",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "expo-env.d.ts",
+    ".next/types/**/*.ts"
   ]
 }
